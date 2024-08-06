@@ -45,6 +45,22 @@
       "options": {
         "cwd": "${workspaceFolder}"
       }
+    },
+    {
+      "label": "PreLaunchTask for RiskManagement with Live Data",
+      "type": "process",
+      "command": "npx",
+      "args": [
+        "node",
+        "-e",
+        "console.log(\"prelaunch task returns OK\")"
+      ],
+      "dependsOn": [
+        "npm-install"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
     }
   ]
 }
